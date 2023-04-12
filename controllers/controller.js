@@ -26,7 +26,7 @@ static async login(req,res){
 
         const response = {
             id: userAccount.id,
-            email: userAccount.email,
+            password: userAccount.password,
             username: userAccount.username
           }
           const access_token = jwt.generateToken(response)
